@@ -1,0 +1,50 @@
+/*=============== SERVICES ===============*/
+.services{
+    &__container{
+        padding-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__data{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        padding: 25px;
+        background-color: #333;
+        width: 48%;
+        height: 300px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        opacity: 0;
+        animation: servicesDataZoomIn 1s ease forwards;
+        animation-play-state:paused;
+
+        h3, p{
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &__data{
+            width: 100%;
+            padding: 30px;           
+            height: auto;
+            min-height: 300px;
+            h3,p{
+                width: 80%;
+            }
+        }
+    }
+
+    @keyframes servicesDataZoomIn {
+        from{transform: scale(.4); opacity: 0;}
+        to{transform: scale(1); opacity: 1;}
+    }
+
+}

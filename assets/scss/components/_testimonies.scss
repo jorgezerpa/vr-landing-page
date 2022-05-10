@@ -1,0 +1,62 @@
+/*=============== SERVICES ===============*/
+.testimonials{
+    &__container{
+        padding-top: 3rem;
+        display: flex;
+    }
+    &__data{
+        background-color: #333;
+        padding: 20px;
+        padding-bottom: 0;
+        width: 30%;
+        border-radius: 20px;
+        p{
+            font-size: .8rem;
+        }
+
+        &>p, &>div{
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        &>div{
+            display: flex;
+            gap: 10px;
+            div:nth-child(1){
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                img{
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            div:nth-child(2){
+                p{
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
+    &__ig{
+        color: #faa;
+    }
+    &__span{
+        font-weight: bold;
+        color: #dd0;
+    }
+
+    @media screen and (max-width: 600px) {
+        &__container{
+            flex-direction: column;
+        }
+        &__data{
+            width: 100%;
+        }
+    }
+}

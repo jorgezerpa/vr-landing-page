@@ -1,0 +1,32 @@
+/*=============== HOME ===============*/
+.values{
+    margin-bottom: 6rem;
+    &__container{
+        row-gap: 3rem;
+    }
+    &__title{
+        font-size: var(--biggest-font-size);
+        font-weight: var(--font-bold);
+        margin-bottom: var(--mb-0-75);
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+    &__grid{
+        display: flex;
+        flex-wrap: wrap;
+        div{
+            padding: 12px;
+            position: relative;
+            text-align: center;
+            width: 50%;
+            
+            img{
+                height: 50px;
+            }
+        }
+    }
+
+
+
+}

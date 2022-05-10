@@ -1,0 +1,15 @@
+.bg__light{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(#AC2ACA, #CD5ABC);
+    filter: blur(130px);
+    animation: bgAnimation 5s linear infinite;
+    z-index: -1;
+}
+@keyframes bgAnimation {
+    0%{filter: blur(120px);}
+    50%{filter: blur(70px);}
+    100%{filter: blur(120px);}
+}
