@@ -528,10 +528,6 @@ body.dark-theme {
   font-size: 1.5rem;
 }
 
-.special-bg {
-  background: linear-gradient(135deg, rgba(185, 54, 245, 0.2), rgba(170, 20, 240, 0.15));
-}
-
 /*=============== ABOUT ===============*/
 .about__container {
   gap: 2.5rem;
@@ -717,15 +713,6 @@ body.dark-theme {
             transform: translate(0, 0);
     opacity: 1;
   }
-}
-
-/*=============== SECURITY ===============*/
-.security__container {
-  gap: 2.5rem;
-}
-
-.security__data {
-  text-align: center;
 }
 
 /*=============== SERVICES ===============*/
@@ -995,55 +982,6 @@ body.dark-theme {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-}
-
-/*=============== APP ===============*/
-.app__container {
-  gap: 2.5rem;
-}
-
-.app__data {
-  text-align: center;
-}
-
-.app__description {
-  margin-bottom: var(--mb-1-5);
-}
-
-.app__buttons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (max-content)[2];
-      grid-template-columns: repeat(2, -webkit-max-content);
-      grid-template-columns: repeat(2, max-content);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: .5rem;
-}
-
-/*=============== CONTACT ===============*/
-.contact__container {
-  padding-bottom: 3rem;
-}
-
-.contact__description {
-  text-align: center;
-}
-
-.contact__content {
-  row-gap: .75rem;
-}
-
-.contact__address {
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-}
-
-.contact__information {
-  font-weight: initial;
-  color: var(--text-color);
 }
 
 /*=============== FOOTER ===============*/
